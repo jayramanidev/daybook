@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --color-df-background: #EEEAF8;
+  --color-df-surface: #F8F6FD;
+  --color-df-surface-deep: #E2DDF2;
+  --color-df-ink: #1B1A3F;
+  --color-df-ink-soft: #5B5A80;
+  --color-df-primary: #3447FF;
+  --color-df-done: #5CCFAB;
+  --color-df-tomorrow: #FFB547;
+  --color-df-danger: #F2554A;
+  --font-display: 'Bricolage Grotesque', sans-serif;
+  --font-body: 'Schibsted Grotesk', sans-serif;
+}
+
+.dark {
+  --color-df-background: #12112B;
+  --color-df-surface: #1E1D45;
+  --color-df-surface-deep: #292858;
+  --color-df-ink: #E9E6F7;
+  --color-df-ink-soft: #A3A1C8;
+  --color-df-primary: #7B88FF;
+  --color-df-done: #6FDDB9;
+  --color-df-tomorrow: #FFC46B;
+  --color-df-danger: #FF7A70;
+}
+
+@theme {
+  --color-df-bg: var(--color-df-background);
+  --color-df-surface: var(--color-df-surface);
+  --color-df-surface-deep: var(--color-df-surface-deep);
+  --color-df-ink: var(--color-df-ink);
+  --color-df-ink-soft: var(--color-df-ink-soft);
+  --color-df-primary: var(--color-df-primary);
+  --color-df-done: var(--color-df-done);
+  --color-df-tomorrow: var(--color-df-tomorrow);
+  --color-df-danger: var(--color-df-danger);
+
+  --font-display: 'Bricolage Grotesque', sans-serif;
+  --font-body: 'Schibsted Grotesk', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-df-background);
+  color: var(--color-df-ink);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom scrollbars that stay minimal */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(91, 90, 128, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(91, 90, 128, 0.35);
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Dayfold",
+  "short_name": "Dayfold",
+  "description": "Personal-use offline-first to-do app with folding page gestures, variable typography, and satisfying micro-interactions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4F1FA",
+  "theme_color": "#1B1A3F",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
